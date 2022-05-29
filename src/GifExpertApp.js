@@ -1,11 +1,13 @@
 //rafc
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGtid } from './components/GifGtid';
+
 
 const GifExpertApp = ({ category }) => {
 
 
-    const initialState =  ['One Punch', 'Samurai', 'Dragon Ball'];
+    const initialState =  ['One Punch'];
     const [categories, setCategories] = useState(initialState);
     
     /*const handleAdd = () => {
@@ -21,9 +23,12 @@ const GifExpertApp = ({ category }) => {
 
             <ol>
                 {
-                    categories.map((category, i) => {
-                        return <li key={category}>{category}</li>
-                    })
+                    categories.map((category, i) => 
+                    <GifGtid 
+                        key={ category }
+                        category= { category }
+                    />
+                    )
                 }
             </ol>
         </>
