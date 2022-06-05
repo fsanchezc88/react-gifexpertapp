@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
       e.preventDefault();
 
       if(inputValue.trim().length > 2){
-        setCategories(categories => [...categories, inputValue]);
+        setCategories(categories => [ inputValue, ...categories ]);
         console.log('Submit hecho');
       }  
     

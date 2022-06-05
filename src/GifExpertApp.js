@@ -1,7 +1,7 @@
 //rafc
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
-import { GifGtid } from './components/GifGtid';
+import { GifGrid } from './components/GifGrid';
 
 
 const GifExpertApp = ({ category }) => {
@@ -24,7 +24,7 @@ const GifExpertApp = ({ category }) => {
             <ol>
                 {
                     categories.map((category, i) => 
-                    <GifGtid 
+                    <GifGrid 
                         key={ category }
                         category= { category }
                     />
