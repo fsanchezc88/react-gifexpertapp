@@ -11,9 +11,9 @@ console.log(images);
 
   return (
    <>
-    <h3> { category } </h3>
+    <h3 className='animate__animate animate__fadeIn'> { category } </h3>
 
-    { loading && <p>Loading</p> }
+    { loading && <p className='animate__animate animate__flash'>Loading</p> }
 
     <div className="card-grid">    
         <ol>
